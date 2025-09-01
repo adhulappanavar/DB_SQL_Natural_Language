@@ -19,6 +19,11 @@ This project demonstrates natural language to SQL conversion using OpenAI's GPT 
 - **Features**: All join types, hierarchical data, many-to-many relationships, complex aggregations
 - **Example queries**: "Show me all customers with their total spending and order count", "Find products with low inventory that need reordering"
 
+### 4. TicketQueue System (`4_TicketQueue/`)
+- **8+ tables**: Comprehensive ticket management system with role-based access
+- **Features**: Complex joins, dependencies, file attachments, time tracking, priority management
+- **Example queries**: "Show me all ticket items assigned to Bob Developer", "List ticket queues with high priority", "Find overdue ticket items"
+
 ## Setup Instructions
 
 ### Prerequisites
@@ -43,6 +48,9 @@ cd ../2_Two_tables_with_joins
 pip install -r requirements.txt
 
 cd ../3_Complex_ecommerce_database
+pip install -r requirements.txt
+
+cd ../4_TicketQueue
 pip install -r requirements.txt
 ```
 
@@ -111,6 +119,12 @@ Each example provides a Gradio web interface where you can:
 - "Find products with low inventory that need reordering"
 - "Show average rating by product category"
 - "Find customers who haven't ordered in the last 30 days"
+
+### Enterprise (Ticket Management)
+- "Show me all ticket items assigned to Bob Developer"
+- "List ticket queues with high priority"
+- "Find overdue ticket items"
+- "Show ticket items with their dependencies"
 
 ## Technology Stack
 
